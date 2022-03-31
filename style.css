@@ -1,0 +1,329 @@
+/* RESET CSS */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+
+/* INICIO DEL CSS */
+
+
+
+
+/* PARTE DE LOS BODYS */
+
+.index__body {
+    display: grid; 
+    grid-template-columns: 1fr 300px 1fr; 
+    grid-template-rows: 45px 45px 100px 320px 200px 130px 80px; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "headerArea headerArea headerArea"
+      "navArea navArea navArea"
+      ". . ."
+      ". sectionArea ."
+      ". asideArea ."
+      ". . ."
+      "footerArea footerArea footerArea"; 
+  }
+
+  .stock__body {
+    display: grid; 
+    grid-template-columns: 1fr 100px 1fr 100px 1fr; 
+    grid-template-rows: 40px 40px 40px 700px 40px 60px; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        "headerArea headerArea headerArea headerArea headerArea"
+        "navArea navArea navArea navArea navArea"
+        ". . . . ."
+        ". stock1Area . stock2Area ."
+        ". . . . ."
+        "footerArea footerArea footerArea footerArea footerArea"
+  }
+
+
+
+/* PARTE DEL HEADER */
+
+header {
+    background-color: #0c0c22;
+    grid-area: headerArea;
+    
+}
+
+.header__h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+    align-content: center;
+    font-weight: 500;
+    margin-top: -5px;
+}
+
+.header__h1>a {
+    text-decoration: none;
+    color: #aaa6ca;
+}
+
+/* PARTE DEL NAV */
+
+nav {
+    display: flex;
+    background-color: #32314e;
+    grid-area: navArea;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav__ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    
+}
+
+.nav__ul__li {
+    display: flex;
+}
+
+.nav__ul__li>a {
+    display: flex;
+    text-decoration: none;
+    color: #aaa6ca;
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 15px;
+    margin-top: 2px;
+}
+
+/* PARTE DEL SECTION */
+
+.section__index {
+    grid-area: sectionArea;
+    background-color: #1c1c2e;
+}
+
+.section__h3 {
+    display: flex;
+    color: #aaa6ca;
+    background-color: #0c0c22;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+.section__h4 {
+    display: flex;
+    color: #aaa6ca;
+    background-color: #1c1c2e;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    justify-content: center;
+    padding: 5px 0 5px 0;
+}
+
+.section__ul {
+    display: flex;
+    color: #aaa6ca;
+    flex-direction: column;
+}
+
+.section__ul>li {
+    display: inline-block;
+    border: #aaa6ca 3px solid;
+    text-align: center;
+    margin: 10px 25px;
+    background-color: #32314e;
+    padding: 3px 0 3px 0;
+}
+
+.section__ul>li>h5 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+/* PARTE DEL ASIDE */
+
+.aside__index {
+    display: flex;
+    grid-area: asideArea;
+    width: 300px;
+}
+
+/* PARTE DEL FOOTER */
+
+footer {
+    display: flex;
+    grid-area: footerArea;
+    background-color: #0c0c22;
+    align-items: center;
+    justify-content: center;
+}
+
+footer>ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    
+}
+
+footer>ul>li{
+    display: flex;
+    margin: 0 10px 0 10px;
+}
+
+footer>ul>li>a {
+    text-decoration: none;
+    color:#aaa6ca;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* PARTE DEL STOCK */
+
+.ul__stock1 {
+    grid-area: stock1Area;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ul__stock2 {
+    grid-area: stock2Area;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.ul__stock1>li {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1c1c2e;
+    color: #aaa6ca;
+    border: #aaa6ca 3px solid;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 15px;
+    font-weight: 900;    
+} 
+
+
+.ul__stock2>li {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    flex-direction: column;    
+    background-color: #1c1c2e;
+    color: #aaa6ca;
+    border: #aaa6ca 3px solid;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 15px;
+    font-weight: 200;        
+} 
