@@ -1,139 +1,222 @@
 /* RESET CSS */
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
 
 body {
-    line-height:1;
+    line-height: 1;
 }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
 
 nav ul {
-    list-style:none;
+    list-style: none;
 }
 
-blockquote, q {
-    quotes:none;
+blockquote,
+q {
+    quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
 
 a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
 
+
 /* change colours to suit your needs */
+
 ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
 }
 
+
 /* change colours to suit your needs */
+
 mark {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
 }
 
 del {
     text-decoration: line-through;
 }
 
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
 }
 
 table {
-    border-collapse:collapse;
-    border-spacing:0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
 
 /* change border colour to suit your needs */
+
 hr {
-    display:block;
-    height:1px;
-    border:0;  
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
 }
 
-input, select {
-    vertical-align:middle;
+input,
+select {
+    vertical-align: middle;
 }
-
-
 
 
 /* INICIO DEL CSS */
 
 
-
-
 /* PARTE DE LOS BODYS */
 
 .index__body {
-    display: grid; 
-    grid-template-columns: 1fr 300px 1fr; 
-    grid-template-rows: 45px 45px 100px 320px 200px 130px 80px; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "headerArea headerArea headerArea"
-      "navArea navArea navArea"
-      ". . ."
-      ". sectionArea ."
-      ". asideArea ."
-      ". . ."
-      "footerArea footerArea footerArea"; 
-  }
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr;
+    grid-template-rows: 40px 40px 100px 320px 200px 130px 80px;
+    gap: 0px 0px;
+    grid-template-areas: "headerArea headerArea headerArea" "navArea navArea navArea" ". . ." ". sectionArea ." ". asideArea ." ". . ." "footerArea footerArea footerArea";
+}
 
-  .stock__body {
-    display: grid; 
-    grid-template-columns: 1fr 100px 1fr 100px 1fr; 
-    grid-template-rows: 40px 40px 40px 700px 40px 60px; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-        "headerArea headerArea headerArea headerArea headerArea"
-        "navArea navArea navArea navArea navArea"
-        ". . . . ."
-        ". stock1Area . stock2Area ."
-        ". . . . ."
-        "footerArea footerArea footerArea footerArea footerArea"
-  }
+.stock__body {
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr 100px 1fr;
+    grid-template-rows: 40px 40px 40px 700px 40px 80px;
+    gap: 0px 0px;
+    grid-template-areas: "headerArea headerArea headerArea headerArea headerArea" "navArea navArea navArea navArea navArea" ". . . . ." ". stock1Area . stock2Area ." ". . . . ." "footerArea footerArea footerArea footerArea footerArea"
+}
 
+.tutoriales__body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40px 40px 60px 200px 400px 40px 80px;
+    gap: 0px 0px;
+    grid-template-areas: "headerArea" "navArea" "." "textoArea" "videoArea" "." "footerArea"
+}
+
+.contacto__body {
+    display: grid;
+    grid-template-columns: 1fr 290px 1fr;
+    grid-template-rows: 40px 40px 60px 350px 400px 40px 80px;
+    gap: 0px 0px;
+    grid-template-areas: "headerArea headerArea headerArea" "navArea navArea navArea" ". . ." ". mensajeArea ." ". mapaArea ." ". . ." "footerArea footerArea footerArea"
+}
+
+.club__body {
+    display: grid;
+    grid-template-columns: 1fr 290px 1fr;
+    grid-template-rows: 40px 40px 60px 350px 400px 40px 80px;
+    gap: 0px 0px;
+    grid-template-areas: "headerArea headerArea headerArea" "navArea navArea navArea" ". . ." ". beneficiosArea ." ". socioArea ." ". . ." "footerArea footerArea footerArea"
+}
 
 
 /* PARTE DEL HEADER */
@@ -141,7 +224,6 @@ input, select {
 header {
     background-color: #0c0c22;
     grid-area: headerArea;
-    
 }
 
 .header__h1 {
@@ -159,6 +241,7 @@ header {
     color: #aaa6ca;
 }
 
+
 /* PARTE DEL NAV */
 
 nav {
@@ -169,16 +252,14 @@ nav {
     justify-content: space-around;
 }
 
-.nav__ul{
+.nav__ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    
-    
 }
 
 .nav__ul__li {
     display: flex;
+    margin: 0 5px 0 5px;
 }
 
 .nav__ul__li>a {
@@ -187,9 +268,10 @@ nav {
     color: #aaa6ca;
     text-align: center;
     font-family: 'Fredoka', sans-serif;
-    font-size: 15px;
+    font-size: 12px;
     margin-top: 2px;
 }
+
 
 /* PARTE DEL SECTION */
 
@@ -241,6 +323,7 @@ nav {
     font-weight: 100;
 }
 
+
 /* PARTE DEL ASIDE */
 
 .aside__index {
@@ -248,6 +331,7 @@ nav {
     grid-area: asideArea;
     width: 300px;
 }
+
 
 /* PARTE DEL FOOTER */
 
@@ -263,21 +347,21 @@ footer>ul {
     display: flex;
     list-style: none;
     justify-content: space-around;
-    
 }
 
-footer>ul>li{
+footer>ul>li {
     display: flex;
     margin: 0 10px 0 10px;
 }
 
 footer>ul>li>a {
     text-decoration: none;
-    color:#aaa6ca;
+    color: #aaa6ca;
     font-family: 'Fredoka', sans-serif;
     font-size: 15px;
     font-weight: 500;
 }
+
 
 /* PARTE DEL STOCK */
 
@@ -296,7 +380,6 @@ footer>ul>li>a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
 }
 
 .ul__stock1>li {
@@ -310,20 +393,237 @@ footer>ul>li>a {
     border: #aaa6ca 3px solid;
     font-family: 'Fredoka', sans-serif;
     font-size: 15px;
-    font-weight: 900;    
-} 
-
+    font-weight: 900;
+}
 
 .ul__stock2>li {
     display: flex;
     height: 100px;
     width: 100px;
     align-items: center;
-    flex-direction: column;    
+    flex-direction: column;
     background-color: #1c1c2e;
     color: #aaa6ca;
     border: #aaa6ca 3px solid;
     font-family: 'Fredoka', sans-serif;
     font-size: 15px;
-    font-weight: 200;        
-} 
+    font-weight: 200;
+}
+
+
+/* PARTE DEL TUTORIAL*/
+
+.tutoriales__div__p {
+    grid-area: textoArea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1c1c2e;
+}
+
+.tutoriales__div__p>h5 {
+    display: flex;
+    color: #aaa6ca;
+    background-color: #0c0c22;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 5px 0 5px 0;
+}
+
+.tutoriales__div {
+    grid-area: videoArea;
+}
+
+.tutoriales__div__p>h5 {
+    display: flex;
+    color: #aaa6ca;
+    background-color: #0c0c22;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 5px 0 5px 0;
+}
+
+.tutoriales__div__p>p {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    color: #aaa6ca;
+    margin: 10px;
+    text-align: justify;
+}
+
+.tutoriales__div>iframe {
+    width: 100%;
+}
+
+
+/* PARTE DEL CONTACTO */
+
+.div__form {
+    grid-area: mensajeArea;
+}
+
+.div__form>h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    background-color: #0c0c22;
+    color: #aaa6ca;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 17px;
+    font-weight: 200;
+}
+
+.div__form>form>input {
+    display: flex;
+    width: 282px;
+    border-radius: 0;
+    margin-top: 8px;
+    background-color: #32314e;
+    color: #aaa6ca;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+    justify-content: center;
+}
+
+.div__form>form>textarea {
+    display: flex;
+    width: 282px;
+    border-radius: 0;
+    margin-top: 8px;
+    background-color: #32314e;
+    color: #aaa6ca;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.mapa {
+    grid-area: mapaArea;
+}
+
+.mapa>h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    background-color: #0c0c22;
+    color: #aaa6ca;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 17px;
+    font-weight: 200;
+    margin-bottom: 8px;
+}
+
+.mapa>iframe {
+    width: 100%;
+    height: 350px;
+}
+
+
+/* PARTE DEL CLUB */
+
+.beneficios {
+    grid-area: beneficiosArea;
+    background-color: #32314e;
+}
+
+.div__socio {
+    grid-area: socioArea;
+    margin-top: 20px;
+}
+
+.beneficios>h6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    background-color: #0c0c22;
+    color: #aaa6ca;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.beneficios>p {
+    color: #aaa6ca;
+    text-align: justify;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    margin: 10px;
+}
+
+.div__socio>h6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    background-color: #0c0c22;
+    color: #aaa6ca;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.div__socio>form>input {
+    display: flex;
+    width: 282px;
+    border-radius: 0;
+    margin-top: 8px;
+    background-color: #32314e;
+    color: #aaa6ca;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+    justify-content: center;
+}
+
+.nacimiento {
+    display: flex;
+    background-color: #32314e;
+    margin-top: 8px;
+    color: #aaa6cab0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nacimiento>h6 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+    align-items: center;
+}
+
+.nacimiento>select {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+    align-items: center;
+    background-color: #0c0c22;
+    color: #aaa6ca;
+}
+
+.sexo {
+    display: flex;
+    background-color: #32314e;
+    margin-top: 8px;
+    color: #aaa6cab0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sexo>h6 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+    align-items: center;
+}
