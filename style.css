@@ -241,6 +241,11 @@ header {
     color: #aaa6ca;
 }
 
+.header__h1:hover {
+    font-size: 25px;
+    transition: font-size 1s;
+}
+
 
 /* PARTE DEL NAV */
 
@@ -270,6 +275,16 @@ nav {
     font-family: 'Fredoka', sans-serif;
     font-size: 12px;
     margin-top: 2px;
+}
+
+.nav__ul__li:hover {
+    background-color: #47456d;
+    transition: background-color .5s;
+}
+
+.nav__ul__li>a:hover {
+    font-size: 13px;
+    transition: font-size 2s;
 }
 
 
@@ -352,6 +367,7 @@ footer>ul {
 footer>ul>li {
     display: flex;
     margin: 0 10px 0 10px;
+    padding: 10px 2px 10px 2px;
 }
 
 footer>ul>li>a {
@@ -360,6 +376,11 @@ footer>ul>li>a {
     font-family: 'Fredoka', sans-serif;
     font-size: 15px;
     font-weight: 500;
+}
+
+footer>ul>li :hover {
+    background-color: #47456d;
+    transition: background-color .5s;
 }
 
 
@@ -627,3 +648,84 @@ footer>ul>li>a {
     font-weight: 200;
     align-items: center;
 }
+
+
+/* TERMINADO EL DISEÑO MOVIL */
+
+
+/* PARTE DEL DISEÑO TABLET */
+
+@media screen and (min-width:426px) {
+    /* INDEX TABLET */
+    .index__body {
+        display: grid;
+        grid-template-columns: 1fr 400px 1fr;
+        grid-template-rows: 40px 40px 100px 320px 267px 130px 80px;
+        gap: 0px 0px;
+        grid-template-areas: "headerArea headerArea headerArea" "navArea navArea navArea" ". . ." ". sectionArea ." ". asideArea ." ". . ." "footerArea footerArea footerArea";
+    }
+    /* STOCK TABLET */
+    .stock__body {
+        display: grid;
+        grid-template-columns: 1fr 180px 1fr 180px 1fr;
+        grid-template-rows: 40px 40px 40px 700px 40px 80px;
+        gap: 0px 0px;
+        grid-template-areas: "headerArea headerArea headerArea headerArea headerArea" "navArea navArea navArea navArea navArea" ". . . . ." ". stock1Area . stock2Area ." ". . . . ." "footerArea footerArea footerArea footerArea footerArea"
+    }
+    .ul__stock1>li {
+        display: flex;
+        height: 180px;
+        width: 180px;
+        margin-bottom: 5px;
+    }
+    .ul__stock2>li {
+        display: flex;
+        height: 180px;
+        width: 180px;
+        margin-bottom: 5px;
+    }
+    /* TUTORIALES TABLET */
+    .tutoriales__body {
+        display: grid;
+        grid-template-columns: 1fr 425px 1fr;
+        grid-template-rows: 40px 40px 60px 200px 400px 40px 80px;
+        gap: 0px 0px;
+        grid-template-areas: "headerArea headerArea headerArea" "navArea navArea navArea" ". . ." ". textoArea ." ". videoArea ." ". . ." "footerArea footerArea footerArea"
+    }
+    /* CONTACTO TABLET */
+    .contacto__body {
+        display: grid;
+        grid-template-columns: 1fr 400px 1fr;
+        grid-template-rows: 40px 40px 60px 400px 450px 40px 80px;
+        gap: 0px 0px;
+        grid-template-areas: "headerArea headerArea headerArea" "navArea navArea navArea" ". . ." ". mensajeArea ." ". mapaArea ." ". . ." "footerArea footerArea footerArea"
+    }
+    .div__form>h4 {
+        height: 30px;
+        font-size: 19px;
+    }
+    .div__form>form>input {
+        width: 393px;
+        margin-top: 12px;
+        font-size: 15px;
+    }
+    .div__form>form>textarea {
+        width: 394px;
+        margin-top: 12px;
+        font-size: 15px;
+    }
+    /* CLUB TABLET */
+    .club__body {
+        display: grid;
+        grid-template-columns: 1fr 390px 1fr;
+        grid-template-rows: 40px 40px 60px 350px 400px 40px 80px;
+        gap: 0px 0px;
+        grid-template-areas: "headerArea headerArea headerArea" "navArea navArea navArea" ". . ." ". beneficiosArea ." ". socioArea ." ". . ." "footerArea footerArea footerArea"
+    }
+    .div__socio>form>input {
+        width: 382px;
+    }
+}
+
+
+/* TERMINADO EL DISEÑO TABLET */
